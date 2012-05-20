@@ -13,3 +13,6 @@ ttp://chromium.googlecode.com/
 http://phantomjs.org/
 http://code.google.com/p/phantomjs/wiki/Installation
 http://code.google.com/p/phantomjs/wiki/QuickStart
+
+http://cassinidev.codeplex.com/
+https://github.com/NancyFx/Nancy/wiki/Testing-your-application
