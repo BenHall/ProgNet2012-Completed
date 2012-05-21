@@ -1,0 +1,20 @@
+var url = "http://www.google.com/"
+console.log("Started...");
+
+var page = require('webpage').create();
+
+page.onConsoleMessage = function(msg) { console.log(msg); } 
+
+page.open(url, function (status) {
+	page.includeJs('jquery.js', function() {
+		console.log("done");
+		page.evaluate(function () {
+			$('input[name="q"]').val('ASP.net');
+			$('form').submit();
+		});
+		var title = page.evaluate(function () {
+			return document.title;
+		});
+		console.log('Page title is ' + title);
+	});
+});

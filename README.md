@@ -14,5 +14,9 @@ http://phantomjs.org/
 http://code.google.com/p/phantomjs/wiki/Installation
 http://code.google.com/p/phantomjs/wiki/QuickStart
 
+http://nodejs.org/#download
+https://github.com/StanAngeloff/lotte
+
+http://chutzpah.codeplex.com/
 http://cassinidev.codeplex.com/
 https://github.com/NancyFx/Nancy/wiki/Testing-your-application
