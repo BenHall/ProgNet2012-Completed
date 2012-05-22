@@ -91,7 +91,7 @@ namespace Mvc3ToolsUpdateWeb_Default.Controllers
             {
                 // Attempt to register the user
                 MembershipCreateStatus createStatus;
-                Membership.CreateUser(model.UserName, model.Password, model.Email, "question", "answer", true, null, out createStatus);
+                Membership.CreateUser(model.UserName, model.Password, model.Email, "question", "answer is a complex thing", true, null, out createStatus);
 
                 if (createStatus == MembershipCreateStatus.Success)
                 {
