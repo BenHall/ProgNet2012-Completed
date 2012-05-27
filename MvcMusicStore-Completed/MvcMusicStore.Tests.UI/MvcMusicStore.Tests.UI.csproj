@@ -48,6 +48,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,13 +66,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddToCart\AddFeaturedHomepageTrackToCartTests.cs" />
+    <Compile Include="Home\ListItemsTests.cs" />
     <Compile Include="LaunchBrowser.cs" />
     <Compile Include="PageModels\Homepage.cs" />
     <Compile Include="PageModels\ItemListing.cs" />
     <Compile Include="PageModels\ShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveFromCart\RemoveTrackFromCartTests.cs" />
     <Compile Include="WebApp.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

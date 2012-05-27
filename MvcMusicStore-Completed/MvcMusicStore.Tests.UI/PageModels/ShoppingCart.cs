@@ -28,5 +28,10 @@ namespace MvcMusicStore.Tests.UI.PageModels
         {
             return _driver.FindElement(By.Id("cart-contents")).Text.Contains(title);
         }
+
+        internal void RemoveItem(string title)
+        {
+            _driver.FindElement(By.ClassName("RemoveLink")).Click();
+        }
     }
 }

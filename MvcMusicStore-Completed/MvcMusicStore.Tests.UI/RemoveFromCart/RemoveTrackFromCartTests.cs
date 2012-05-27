@@ -8,9 +8,10 @@ using MvcMusicStore.Tests.UI.PageModels;
 
 namespace MvcMusicStore.Tests.UI.AddToCart
 {
-    class AddFeaturedHomepageTrackToCartTests
+    public class RemoveTrackFromCartTests
     {
         IWebDriver _driver;
+        private string _title;
 
         [TestFixtureSetUp]
         public void CreateDriver()
@@ -22,22 +23,21 @@ namespace MvcMusicStore.Tests.UI.AddToCart
         public void NavigateToWebpage()
         {
             _driver.Navigate().GoToUrl(WebApp.Url);
+            _title = "The Best Of Men At Work";
+            new Homepage(_driver).SelectItem(_title);
+            new ItemListing(_driver).AddToCart();
         }
 
         [Test]
-        public void AddingItemShouldIncreaseCartNumber()
+        public void RemovingItemShouldDecreaseCartCount()
         {
-            string title = "The Best Of Men At Work";
-            new Homepage(_driver).SelectItem(title);
-            new ItemListing(_driver).AddToCart();
-            
             var cart = new ShoppingCart(_driver);
+            cart.RemoveItem(_title); //Ajax call... will return straight away.
+            LaunchBrowser.Wait(_driver);
 
-            LaunchBrowser.TakeScreenshotOnFailure(_driver, () =>
-            {
-                Assert.AreEqual(1, cart.HeaderCount(), "Header count different");
-                Assert.IsTrue(cart.IsInCart(title));
-            });
+            Assert.IsTrue(_driver.FindElement(By.Id("update-message")).Displayed);
+            Assert.AreEqual(0, cart.HeaderCount(), "Header count different");
+            Assert.IsFalse(cart.IsInCart(_title));
         }
 
         [TestFixtureTearDown]
