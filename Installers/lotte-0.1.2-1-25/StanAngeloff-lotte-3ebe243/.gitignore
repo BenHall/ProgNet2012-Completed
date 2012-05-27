@@ -1,0 +1,7 @@
+~*
+.*.pid
+lotte-*.tgz
+node_modules
+npm-*.log
+README.html
+Watchrfile

@@ -1,0 +1,6 @@
+@path    = 'test'
+@include = '**/test_*.coffee'
+@timeout = 5000
+
+@on 'hello', (value, resume) ->
+  resume "#{value}!"

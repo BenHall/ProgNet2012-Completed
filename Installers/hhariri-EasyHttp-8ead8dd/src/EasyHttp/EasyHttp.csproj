@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9239DA70-1736-4291-8D18-266999E54445}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyHttp</RootNamespace>
+    <AssemblyName>EasyHttp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JsonFx, Version=2.0.1106.2610, Culture=neutral, PublicKeyToken=315052dd637f8a52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\JsonFx.2.0.1106.2610\lib\net40\JsonFx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codecs\DefaultDecoder.cs" />
+    <Compile Include="Codecs\IEncoder.cs" />
+    <Compile Include="Codecs\JsonFXExtensions\RegExBasedDataReaderProvider.cs" />
+    <Compile Include="Codecs\JsonFXExtensions\RegExBasedDataWriterProvider.cs" />
+    <Compile Include="Codecs\DefaultEncoder.cs" />
+    <Compile Include="Codecs\DynamicType.cs" />
+    <Compile Include="Codecs\IDecoder.cs" />
+    <Compile Include="Codecs\IMemberBehavior.cs" />
+    <Compile Include="Codecs\JsonFXExtensions\RemoveAmerpsandFromNameJsonResolverStrategy.cs" />
+    <Compile Include="Codecs\JsonFXExtensions\UrlEncoderTextFormatter.cs" />
+    <Compile Include="Codecs\JsonFXExtensions\UrlEncoderWriter.cs" />
+    <Compile Include="Configuration\DefaultEncoderDecoderConfiguration.cs" />
+    <Compile Include="Configuration\IEncoderDecoderConfiguration.cs" />
+    <Compile Include="Http\CacheControl.cs" />
+    <Compile Include="Http\HttpClient.cs" />
+    <Compile Include="Http\HttpContentEncoding.cs" />
+    <Compile Include="Http\HttpContentTypes.cs" />
+    <Compile Include="Http\HttpMethod.cs" />
+    <Compile Include="Http\HttpRequest.cs" />
+    <Compile Include="Http\HttpResponse.cs" />
+    <Compile Include="Infrastructure\ConfigurationException.cs" />
+    <Compile Include="Infrastructure\FileData.cs" />
+    <Compile Include="Infrastructure\HttpException.cs" />
+    <Compile Include="Infrastructure\PropertyNotFoundException.cs" />
+    <Compile Include="Infrastructure\StreamExtensions.cs" />
+    <Compile Include="Infrastructure\UriComposer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

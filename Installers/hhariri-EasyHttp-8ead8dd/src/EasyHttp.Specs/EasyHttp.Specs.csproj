@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F950A41-727E-4416-8D5B-809946DD2836}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyHttp.Specs</RootNamespace>
+    <AssemblyName>EasyHttp.Specs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JsonFx, Version=2.0.1106.2610, Culture=neutral, PublicKeyToken=315052dd637f8a52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\JsonFx.2.0.1106.2610\lib\net40\JsonFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Machine.Specifications, Version=0.4.24.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Machine.Specifications.0.4.24.0\lib\Machine.Specifications.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\EasyHttp\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BugRepros\ExtraHeaderIssue.cs" />
+    <Compile Include="BugRepros\CustomPropertyNameIssue.cs" />
+    <Compile Include="BugRepros\DecodingIssues.cs" />
+    <Compile Include="BugRepros\EnumEncodingIssue.cs" />
+    <Compile Include="BugRepros\UploadFileIssue.cs" />
+    <Compile Include="Specs\UploadRequestSpecs.cs" />
+    <Compile Include="Specs\DynamicSpecs.cs" />
+    <Compile Include="Specs\FileRequestSpecs.cs" />
+    <Compile Include="Specs\HttpRequestSpecs.cs" />
+    <Compile Include="Helpers\Customer.cs" />
+    <Compile Include="Helpers\CustomCodecClass.cs" />
+    <Compile Include="Helpers\DynamicClass.cs" />
+    <Compile Include="Helpers\CouchInformation.cs" />
+    <Compile Include="Helpers\TestSettings.cs" />
+    <Compile Include="Specs\HttpInitSpecs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Helpers\test.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Helpers\test.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyHttp\EasyHttp.csproj">
+      <Project>{9239DA70-1736-4291-8D18-266999E54445}</Project>
+      <Name>EasyHttp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
