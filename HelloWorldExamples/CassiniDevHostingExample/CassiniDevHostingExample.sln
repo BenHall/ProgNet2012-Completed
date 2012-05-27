@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CassiniDevHostingExample", "CassiniDevHostingExample\CassiniDevHostingExample.csproj", "{CE18472A-556C-48FE-A5CC-5379DB343625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CassiniDevHostingExample.Tests.Integration", "CassiniDevHostingExample.Tests.Integration\CassiniDevHostingExample.Tests.Integration.csproj", "{801F6672-E896-4CC5-89AE-75E3C8C4FB2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE18472A-556C-48FE-A5CC-5379DB343625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE18472A-556C-48FE-A5CC-5379DB343625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE18472A-556C-48FE-A5CC-5379DB343625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE18472A-556C-48FE-A5CC-5379DB343625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801F6672-E896-4CC5-89AE-75E3C8C4FB2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801F6672-E896-4CC5-89AE-75E3C8C4FB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801F6672-E896-4CC5-89AE-75E3C8C4FB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801F6672-E896-4CC5-89AE-75E3C8C4FB2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

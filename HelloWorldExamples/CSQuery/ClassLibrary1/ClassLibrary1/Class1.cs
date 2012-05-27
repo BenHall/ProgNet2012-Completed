@@ -15,7 +15,7 @@ namespace ClassLibrary1
         public void csquery()
         {
             var dom = CsQuery.Server.CreateFromUrl("https://www.google.com/#q=ASP.net&fp=476a205d5fa78915");
-            //Fails. JS / Progressive enhancement. Google loads search results as a second stage.
+            //Fails. Google loads search results as a second stage.
             StringAssert.Contains("Get Started with ASP.NET & ASP.NET MVC : Official Microsoft Site", dom.Text()); 
         }
 

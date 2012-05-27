@@ -1,0 +1,139 @@
+[0.001][INFO]:      ChromeDriver 19.0.1068.0 C:\SourceControl\MvcMusicStore\HelloWorldExamples\SeleniumWebDriver\Example1\Example1\bin\Debug\chromedriver.exe
+[2.761][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "binary": "",
+      "extensions": [  ]
+   },
+   "javascriptEnabled": true,
+   "platform": "WINDOWS",
+   "version": ""
+}
+
+[2.763][INFO]:      Launching chrome: "C:\Users\Ben Hall\AppData\Local\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --ignore-certificate-errors --homepage=about:blank
+[7.512][INFO]:      Connected to Chrome successfully. Version: 19.0.1084.52
+[7.529][FINE]:      Command received (/session/a880e5fe1e289420092d9cbb53ff4a74)
+[7.530][FINE]:      Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "19.0.1068.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "19.0.1084.52",
+      "webStorageEnabled": false
+   }
+}
+
+[8.098][FINE]:      Command received (/session/a880e5fe1e289420092d9cbb53ff4a74/timeouts/implicit_wait) with params {
+   "ms": 30000.0
+}
+
+[8.098][FINER]:     Waiting for all views to stop loading...
+[8.099][FINER]:     Done waiting for all views to stop loading
+[8.099][FINER]:     Waiting for all views to stop loading...
+[8.100][FINER]:     Done waiting for all views to stop loading
+[8.100][FINE]:      Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74/timeouts/implicit_wait) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[8.104][FINE]:      Command received (/session/a880e5fe1e289420092d9cbb53ff4a74/url) with params {
+   "url": "http://www.google.co.uk"
+}
+
+[8.104][FINER]:     Waiting for all views to stop loading...
+[8.105][FINER]:     Done waiting for all views to stop loading
+[50.179][FINER]:    Waiting for all views to stop loading...
+[68.692][FINE]:     Command received (/session/a880e5fe1e289420092d9cbb53ff4a74/element) with params {
+   "using": "name",
+   "value": "q"
+}
+
+[68.692][FINER]:    Waiting for all views to stop loading...
+[71.862][FINER]:    Done waiting for all views to stop loading
+[71.862][FINE]:     Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74/url) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[71.863][FINER]:    Done waiting for all views to stop loading
+[71.910][FINER]:    Waiting for all views to stop loading...
+[71.911][FINER]:    Done waiting for all views to stop loading
+[71.911][FINE]:     Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74/element) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1338158572360"
+   }
+}
+
+[71.919][FINE]:     Command received (/session/a880e5fe1e289420092d9cbb53ff4a74/element/:wdc:1338158572360/value) with params {
+   "value": [ "A", "S", "P", ".", "n", "e", "t" ]
+}
+
+[71.919][FINER]:    Waiting for all views to stop loading...
+[71.920][FINER]:    Done waiting for all views to stop loading
+[72.171][FINER]:    Waiting for all views to stop loading...
+[72.172][FINER]:    Done waiting for all views to stop loading
+[72.172][FINE]:     Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74/element/:wdc:1338158572360/value) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[72.197][FINE]:     Command received (/session/a880e5fe1e289420092d9cbb53ff4a74/element/:wdc:1338158572360/value) with params {
+   "value": [ "\uE007" ]
+}
+
+[72.197][FINER]:    Waiting for all views to stop loading...
+[72.200][FINER]:    Done waiting for all views to stop loading
+[72.275][FINER]:    Waiting for all views to stop loading...
+[72.276][FINER]:    Done waiting for all views to stop loading
+[72.276][FINE]:     Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74/element/:wdc:1338158572360/value) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[72.277][FINE]:     Command received (/session/a880e5fe1e289420092d9cbb53ff4a74/element) with params {
+   "using": "link text",
+   "value": "Get Started with ASP.NET & ASP.NET MVC : Official Microsoft Site"
+}
+
+[72.277][FINER]:    Waiting for all views to stop loading...
+[72.278][FINER]:    Done waiting for all views to stop loading
+[72.597][FINER]:    Waiting for all views to stop loading...
+[72.598][FINER]:    Done waiting for all views to stop loading
+[72.598][FINE]:     Command finished (/session/a880e5fe1e289420092d9cbb53ff4a74/element) with response {
+   "sessionId": "a880e5fe1e289420092d9cbb53ff4a74",
+   "status": 0,
+   "value": {
+      "ELEMENT": ":wdc:1338158572361"
+   }
+}
+
