@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\SourceControl\MvcMusicStore\MvcMusicStore-Completed\MvcMusicStore.Tests.UI.nunit" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-05-27" time="21:01:07">
+  <environment nunit-version="2.6.0.12051" clr-version="2.0.50727.4971" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\SourceControl\MvcMusicStore\Installers\NUnit-2.6.0.12051\NUnit-2.6.0.12051\bin" machine-name="PRETTY7" user="Ben Hall" user-domain="Pretty7" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\SourceControl\MvcMusicStore\MvcMusicStore-Completed\MvcMusicStore.Tests.UI.nunit" executed="True" result="Failure" success="False" time="41.519" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\SourceControl\MvcMusicStore\MvcMusicStore-Completed\MvcMusicStore.Tests.UI\bin\Debug\MvcMusicStore.Tests.UI.dll" executed="True" result="Failure" success="False" time="41.508" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="MvcMusicStore" executed="True" result="Failure" success="False" time="41.507" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="41.507" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="UI" executed="True" result="Failure" success="False" time="41.505" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="AddToCart" executed="True" result="Failure" success="False" time="41.505" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="AddFeaturedHomepageTrackToCartTests" executed="True" result="Failure" success="False" time="41.497" asserts="0">
+                            <results>
+                              <test-case name="MvcMusicStore.Tests.UI.AddToCart.AddFeaturedHomepageTrackToCartTests.AddingItemShouldIncreaseCartNumber" executed="True" result="Failure" success="False" time="29.726" asserts="1">
+                                <failure>
+                                  <message><![CDATA[  Header count different
+  Expected: 2
+  But was:  1
+]]></message>
+                                  <stack-trace><![CDATA[at MvcMusicStore.Tests.UI.AddToCart.AddFeaturedHomepageTrackToCartTests.<>c__DisplayClass1.<AddingItemShouldIncreaseCartNumber>b__0() in C:\SourceControl\MvcMusicStore\MvcMusicStore-Completed\MvcMusicStore.Tests.UI\AddToCart\AddFeaturedHomepageTrackToCartTests.cs:line 38
+at MvcMusicStore.Tests.UI.LaunchBrowser.TakeScreenshotOnFailure(IWebDriver driver, Action action) in C:\SourceControl\MvcMusicStore\MvcMusicStore-Completed\MvcMusicStore.Tests.UI\LaunchBrowser.cs:line 58
+at MvcMusicStore.Tests.UI.AddToCart.AddFeaturedHomepageTrackToCartTests.AddingItemShouldIncreaseCartNumber() in C:\SourceControl\MvcMusicStore\MvcMusicStore-Completed\MvcMusicStore.Tests.UI\AddToCart\AddFeaturedHomepageTrackToCartTests.cs:line 36
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
